@@ -18,6 +18,7 @@ class Second_Largest {
         }
 
         secondLargest(arr);
+        sc.close();
     }
 
     public static void secondLargest(int[] arr) {
@@ -44,4 +45,5 @@ class Second_Largest {
             System.out.println("The second largest element is: " + second);
         }
     }
+    
 }
