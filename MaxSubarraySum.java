@@ -1,3 +1,5 @@
+package practice;
+
 public class MaxSubarraySum {
     public static void main(String[] args) {
         int[] arr = { -2, -4 };

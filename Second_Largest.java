@@ -1,3 +1,4 @@
+package practice;
 import java.util.*;
 
 class Second_Largest {
@@ -8,6 +9,7 @@ class Second_Largest {
 
         if (size < 2) {
             System.out.println("Array should have at least two elements");
+            sc.close();
             return;
         }
 

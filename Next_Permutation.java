@@ -1,3 +1,4 @@
+package practice;
 import java.util.Arrays;
 class Next_permutation {
 
