@@ -1,4 +1,4 @@
-package practice;
+
 /* Maximum Product Subarray
 Given an integer array, the task is to find the maximum product of any subarray.
 

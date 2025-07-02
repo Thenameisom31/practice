@@ -10,7 +10,7 @@ Explanation: Update arr[] as [12 - 6, 6 + 6, 4 + 6, 15 - 6, 17 - 6, 10 - 6] = [6
 Input: arr[] = [1, 5, 10, 15], k = 3
 Output: 8
 Explanation: Update arr[] as [1 + 3, 5 + 3, 10 - 3, 15 - 3] = [4, 8, 7, 12]. Now, the minimum difference is 8. */
-package practice;
+
 import java.util.Arrays;
 
 public class MinimizeHeight {

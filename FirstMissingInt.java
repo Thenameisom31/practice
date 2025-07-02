@@ -18,7 +18,7 @@ Input: arr[] = {-8, 0, -1, -4, -3}
 Output: 1
 Explanation: 1 is the smallest positive number missing from the array. */
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 class FirstMissingInt {
     public static void main(String[] args) {

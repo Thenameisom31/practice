@@ -1,4 +1,4 @@
-package practice;
+
 import java.util.*;
 
 class Second_Largest {
