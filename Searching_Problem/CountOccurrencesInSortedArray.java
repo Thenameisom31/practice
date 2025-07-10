@@ -31,17 +31,11 @@ public class CountOccurrencesInSortedArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 1, 1, 1, 3, 4, 5};
+        int[] arr = { 1, 1, 1, 1, 3, 4, 5 };
         int x = 2;
-
         int first = firstOccurrence(arr, x);
         int last = lastOccurrence(arr, x);
-
         int count = (last - first);
-
-        // check if first element >= x, and arr[first] == x
-        
-
         System.out.println("Count of " + x + " in the array is: " + count);
     }
 }
