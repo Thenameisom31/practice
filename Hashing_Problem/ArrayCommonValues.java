@@ -41,6 +41,6 @@ public class ArrayCommonValues {
         int[] a = {1, 2, 1, 3, 1};
         int[] b = {3, 1, 3, 4, 1};
         ArrayList<Integer> result = intersection(a, b);
-        System.out.println(result); // Output: [1, 3]
+        System.out.println(result); 
     }
 }
