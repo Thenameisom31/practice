@@ -45,5 +45,6 @@ public class PairLessThanTarget {
         int[] arr = {7, 2, 5, 3};
         int target = 8;
         System.out.println("Count of pairs with sum less than " + target + ": " + obj.countPairs(arr, target));
+        
     }
 }
