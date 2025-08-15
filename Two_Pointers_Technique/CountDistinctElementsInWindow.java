@@ -1,4 +1,4 @@
-/* ount Distinct Elements In Every Window of Size K
+/* Count Distinct Elements In Every Window of Size K
 
 comments
 Given an array arr[] of size n and an integer k, return the count of distinct numbers in all windows of size k. 
