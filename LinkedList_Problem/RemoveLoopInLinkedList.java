@@ -10,6 +10,7 @@ Input: head = 1 -> 2 -> 3 -> 4, pos = -1
 Output: false
  */
 package LinkedList_Problem;
+
 /*
 class Node
 {
@@ -17,68 +18,58 @@ class Node
     Node next;
 }
 */
-class Node
-{
+class Node {
     int data;
     Node next;
-    Node(int d)
-    {
-        data=d;
-        next=null;
+
+    Node(int d) {
+        data = d;
+        next = null;
     }
 }
 
-class Solution {
-    public static void removeLoop(Node head) {
-       
-        Node fast=head;
-        Node slow=head;
-        
-        
-        while(fast!=null&&fast.next!=null)
-        {
-            slow=slow.next;
-            fast=fast.next.next;
-            if(slow==fast)
-            {
+public class RemoveLoopInLinkedList {
+
+    static public void removeLoopInLinkedList(Node head) {
+        if (head == null || head.next == null) {
+            return;
+        }
+        Node slow = head;
+        Node fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
                 break;
             }
-            
         }
-        if(slow==fast)
-        {
-            slow=head;
-            if(slow!=fast)
-            {
-                while(slow.next!=fast.next)
-                {
-                    slow=slow.next;
-                    fast=fast.next;
-                }
-                fast.next=null;
-            }
-            else
-            {
-                while(fast.next!=slow)
-                {
-                    fast=fast.next;
-                }
-               
-            }
-             fast.next=null;
+        slow = head;
+        while (slow != fast) {
+            slow = slow.next;
+            fast = fast.next;
         }
-        
-        
-    }
-    public static void main(String[] args) {
-        Node head=new Node(1);
-        head.next=new Node(2);
-        head.next.next=new Node(3);
-        head.next.next.next=new Node(4);
-        head.next.next.next.next=head.next;
-        removeLoop(head);
-        System.out.println("Loop removed if present");
+        while (fast.next != slow) {
+            fast = fast.next;
+        }
+        fast.next = null;
+
     }
 
+    public static void main(String[] args) {
+
+        Node head = new Node(1);
+        head.next = new Node(2);
+        head.next.next = new Node(3);
+        head.next.next.next = new Node(4);
+        head.next.next.next.next = head.next; // Creating a loop for testing
+
+        removeLoopInLinkedList(head);
+
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+    }
 }
-    
